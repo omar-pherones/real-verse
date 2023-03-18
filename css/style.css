@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #eaeaea;
+    transition: 0.4s;
+}
+
+.navbar {
+    transition: 0.4s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 98;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.carousel {
+    margin-top: 56px;
+}
+.section-title {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: inherit;
+}
+.cinemas-title {
+    font-size: 24px;
+}
+.cinemas p {
+    font-size: 16px;
+    line-height: 25px;
+}
+.movie {
+    height: 500px;
+    width: 300px;
+    overflow: hidden;
+}
+.movie-poster {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body {
+    padding: 15px 20px;
+}
+.movie-model {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5rem 5rem rgb(0 0 0 / 50%);
+    padding: 2rem;
+    width: 400px;
+    max-width: 400px;
+    border-radius: 1rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.movie-buynow {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5rem 5rem rgb(0 0 0 / 50%);
+    padding: 2rem;
+    width: 500px;
+    max-width: 400px;
+    border-radius: 1rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+.movie-buynow .buyNow {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.768);
+}
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
